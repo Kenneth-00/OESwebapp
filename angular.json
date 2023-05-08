@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "WeatherForcasting": {
+    "OESwebapp": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/WeatherForcasting",
+            "outputPath": "dist/OESwebapp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -78,10 +78,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "WeatherForcasting:build:production"
+              "browserTarget": "OESwebapp:build:production"
             },
             "development": {
-              "browserTarget": "WeatherForcasting:build:development"
+              "browserTarget": "OESwebapp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -89,7 +89,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "WeatherForcasting:build"
+            "browserTarget": "OESwebapp:build"
           }
         },
         "test": {
